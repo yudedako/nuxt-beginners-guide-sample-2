@@ -2,6 +2,7 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
+  srcDir: 'app',
 
   /*
   ** Headers of the page
@@ -48,7 +49,7 @@ module.exports = {
   ** Axios module
   */
   axios: {
-    
+    baseURL: 'https://nuxt-beginners-guide-sample-2.firebaseio.com'
   },
 
   /*
