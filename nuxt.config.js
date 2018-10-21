@@ -39,6 +39,13 @@ module.exports = {
   ],
 
   /*
+  ** Middleware to load before mounting the App
+  */
+  router: {
+    middleware: ['auth-cookie']
+  },
+
+  /*
   ** Nuxt.js modules
   */
   modules: [
