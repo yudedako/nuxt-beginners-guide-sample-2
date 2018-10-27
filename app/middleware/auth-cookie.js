@@ -1,5 +1,4 @@
 import Cookies from 'universal-cookie'
-import { process } from 'ipaddr.js';
 
 export default ({ req, store }) => {
   if (process.browser) {
