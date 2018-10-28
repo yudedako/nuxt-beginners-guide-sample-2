@@ -72,7 +72,7 @@ export default {
       this.removeLikeLogToUser(cloneDeep(likePayload))
     },
 
-    ...mapActions(['addLikeLogToUser', 'removeLikeToPost']),
+    ...mapActions(['addLikeLogToUser', 'removeLikeLogToUser']),
     ...mapActions('posts', ['addLikeToPost', 'removeLikeToPost'])
   },
 
