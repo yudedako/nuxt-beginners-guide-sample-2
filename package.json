@@ -22,8 +22,23 @@
     "universal-cookie": "^3.0.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.2",
     "@vue/test-utils": "^1.0.0-beta.25",
+    "babel-jest": "^23.6.0",
+    "babel-preset-vue-app": "^2.0.0",
     "jest": "^23.6.0",
     "nodemon": "^1.11.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "presets": ["vue-app"]
+      }
+    }
   }
 }
