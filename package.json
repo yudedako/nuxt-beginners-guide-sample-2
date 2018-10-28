@@ -9,7 +9,8 @@
     "dev-debug": "node --inspect-brk=9229 node_modules/nuxt/bin/nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "test": "jest"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.3",
@@ -21,6 +22,8 @@
     "universal-cookie": "^3.0.4"
   },
   "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.25",
+    "jest": "^23.6.0",
     "nodemon": "^1.11.0"
   }
 }
