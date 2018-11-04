@@ -27,17 +27,26 @@
     "babel-jest": "^23.6.0",
     "babel-preset-vue-app": "^2.0.0",
     "jest": "^23.6.0",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "vue-jest": "^3.0.0"
   },
   "jest": {
     "transform": {
       "^.+\\.js$": "babel-jest"
     }
   },
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/app/$1",
+    "^@@/(.*)$": "<rootDir>/$1",
+    "^~/(.*)$": "<rootDir>/app/$1",
+    "^~~/(.*)$": "<rootDir>/$1"
+  },
   "babel": {
     "env": {
       "test": {
-        "presets": ["vue-app"]
+        "presets": [
+          "vue-app"
+        ]
       }
     }
   }
